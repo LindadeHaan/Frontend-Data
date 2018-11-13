@@ -15,12 +15,6 @@ I looked at examples of charts with interaction that are made with D3.
 
 #### Day 2 | November 13, 2018
 
-* Bedenken wat ik wil gaan visualiseren;
-* wat voor chart ga ik gebruiken;
-* Stand-up georganiseerd door May;
-* Data in een json bestand zetten;
-* Schetsen maken van ideeën.
-
 I thought of what data I want to visualize.
 
 I want to visualize books with different languages, different genres, year of publication, publishers and the place where the books are published.
