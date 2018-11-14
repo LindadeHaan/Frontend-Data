@@ -58,7 +58,7 @@ const search = async (q, facet) => {
     librarian: true,
     refine: true,
     facet,
-    count: 10,
+    count: 1000,
     // Credits: Maikel van Veen & Chelsea Doeleman
     filter: (result) => {
 			const publicationYear = getData.getPublicationYearFromResult(result)

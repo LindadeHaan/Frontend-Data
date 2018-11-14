@@ -27,4 +27,12 @@ I put my data in a `json` file.
 
 I made sketches of the ideas I've got to visualize my data and how to make it interactive.
 
+#### Day 3 | November 14, 2018
+
+* idee verteld aan Laurens
+* Gast spreker Leon de Korte, de correspondent/The correspondent
+* map gemaakt met d3
+* heel veel tutorials gezocht
+* landen verwijderen van de map die ik niet nodig heb
+
 # Sketches

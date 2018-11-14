@@ -1,0 +1,28 @@
+{
+  "name": "frontend-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LindadeHaan/Frontend-Data.git"
+  },
+  "author": "Linda de Haan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LindadeHaan/Frontend-Data/issues"
+  },
+  "homepage": "https://github.com/LindadeHaan/Frontend-Data#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "d3": "^5.7.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "node-oba-api-wrapper": "github:maanlamp/node-oba-api-wrapper",
+    "nodemon": "^1.18.6"
+  }
+}
