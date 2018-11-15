@@ -3,6 +3,10 @@
 ## Assignment
 Make a data visualization with interaction.
 
+## Idea
+<img width="600" src="/images/wireframe-datavisualisatie.jpg">
+
+
 # Process
 ### Week 1
 #### Day 1 | November 12, 2018
@@ -34,5 +38,9 @@ I made sketches of the ideas I've got to visualize my data and how to make it in
 * map gemaakt met d3
 * heel veel tutorials gezocht
 * landen verwijderen van de map die ik niet nodig heb
+
+#### Day 4 | November 15, 2018
+
+* wireframe maken van idee
 
 # Sketches
