@@ -1,19 +1,23 @@
-// (async () => { // need async function to get data from everywhere
-//     const languageData = await d3.json('data.json')
-//
-//     var languageCount  = d3.nest()
-//       .key(function(d) { return d.language })
-//       .key(function(d) { return d.genre })
-//       .rollup(function(v) { return v.length })
-//       .entries(languageData)
-//       console.log(JSON.stringify(languageCount))
-//   })()
+(async () => { // need async function to get data from everywhere
+    const languageData = await d3.json('data.json')
+
+    var languageCount  = d3.nest()
+      .key(function(d) { return d.language })
+      .key(function(d) { return d.publicationYear})
+      .key(function(d) { return d.genre })
+      .rollup(function(v) { return v.length })
+      .entries(languageData)
+      console.log(JSON.stringify(languageCount))
+      console.table(languageCount.sort(function(a, b) { return b.values - a.value }))
+
+  })()
 
 //Source map: http://blockbuilder.org/bricedev/b485239a37ca57722603
 //Source changes d3: https://github.com/d3/d3/blob/master/CHANGES.md
 
-  const width = 960
-  const height = 700
+  const width = 1500
+  const height = 960
+  const radius = 30
 
   const projection = d3.geoMercator()
                 .rotate([-10, 0])
