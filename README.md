@@ -33,14 +33,34 @@ I made sketches of the ideas I've got to visualize my data and how to make it in
 
 #### Day 3 | November 14, 2018
 
-* idee verteld aan Laurens
-* Gast spreker Leon de Korte, de correspondent/The correspondent
-* map gemaakt met d3
-* heel veel tutorials gezocht
-* landen verwijderen van de map die ik niet nodig heb
+I told my idea to Laurens and got some feedback. The feedback helped a lot.
+
+The guest speaker, Leon de Korte, had a very interesting talk about what they do at The Correspondent.
+
+I made a map with `D3` with a tutorial and removed the countries I don't need.
+
+I searched for a lot of turtorials about piecharts and maps.
 
 #### Day 4 | November 15, 2018
 
-* wireframe maken van idee
+* feedback die ik heb gehad (verder terug in de tijd)
+
+Today I made a wireframe of my idea for the datavisualization.
+I want to get the data from five languages and 6 genres and categorize them per language area in Europe.
+I chose the five languages you can get at school: Dutch, English, German, French and Spanish. I only focus on Europe.
+
+I already made a map with `D3`, but I need a pie chart first. Because I can make that interactive and than I can look at how I can get the pie charts on a map.
+So I also tried to make pie charts, but I could not make it work.
+
+At the end of the day we had to present our idea to the class.
+
+#### Day 5 | November 16, 2018
+
+Today I worked on getting a pie chart with my data. I could not make it work yet, but I don't have errors. So I don't know what I did wrong.
+I want to figure this out during the weekend.
+
+We had a workshop from Tim about `d3.nest`, he can explain really well and there were some things that were super interesting to learn.
+And I learned a lot from the workshop Laurens gave about `d3Time`.
+And there was a quick workshop about `slack` and `github` by Titus.
 
 # Sketches
