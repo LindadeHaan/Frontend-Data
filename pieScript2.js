@@ -1,43 +1,94 @@
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height"),
-    radius = Math.min(width, height) / 2,
-    g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+function process(d) {
+    const processed = {
+        language: d.language,
+        publicationYear: d.publicationYear,
+        genre: d.genre
+    }
+  return processed
+}
 
-var color = d3.scaleOrdinal(["#DC143C", "#008B8B", "#9ACD32", "#FFEFD5"]);
+// var svg = d3.select("svg"),
+//     width = +svg.attr("width"),
+//     height = +svg.attr("height"),
+//     radius = Math.min(width, height) / 2,
+//     g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+var margin = 10
+var radius = 100
+var color = d3.scaleOrdinal(d3.schemeCategory10);
 
 var pie = d3.pie()
     .sort(null)
-    .value(function(d) { return d.values; });
+    .value(function(d) { return d.genre; });
 
 var path = d3.arc()
     .outerRadius(radius - 10)
     .innerRadius(0);
 
-var label = d3.arc()
-    .outerRadius(radius - 40)
-    .innerRadius(radius - 40);
+// var label = d3.arc()
+//     .outerRadius(radius - 40)
+//     .innerRadius(radius - 40);
 
-d3.json("data1.json", function(d) {
-  d.value = +d.value;
-  return d;
-}, function(error, data) {
-  if (error) throw error;
+    d3.json("data.json").then(function(data) {
+      const dataMap = data.map(process)
+      console.log('DataMap:', dataMap)
+      // console.log("data", data)
+      const languageCount  = d3.nest()
+        .key(function(d) { return d.publicationYear})
+        .key(function(d) { return d.language })
+        .key(function(d) { return d.genre })
+        .rollup(function(v) { return v.length })
+        .object(data)
+        console.log(languageCount)
+        // console.log(JSON.stringify(languageCount))
 
-  var arc = g.selectAll(".arc")
-    .data(pie(data))
-    .enter().append("g")
-      .attr("class", "arc");
+    var svg = d3.select("body").selectAll("div")
+      .data(data)
+    .enter().append("div") // http://code.google.com/p/chromium/issues/detail?id=98951
+      .style("display", "inline-block")
+      .style("width", (radius + margin) * 2 + "px")
+      .style("height", (radius + margin) * 2 + "px")
+    .append("svg")
+      .attr("width", (radius + margin) * 2)
+      .attr("height", (radius + margin) * 2)
+    .append("g")
+      .attr("transform", "translate(" + (radius + margin) + "," + (radius + margin) + ")");
 
-  arc.append("path")
-      .attr("d", path)
-      .attr("fill", function(d) { return color(d.data.genre); });
+      svg.append("text")
+          .attr("dy", ".35em")
+          .attr("text-anchor", "middle")
+          .text(function(d) { return d.key })
 
-  arc.append("text")
-      .attr("transform", function(d) { return "translate(" + label.centroid(d) + ")"; })
-      .attr("dy", "0.35em")
-      .text(function(d) { return d.data.genre; });
-});
+        var g = svg.selectAll("g")
+          .data(function(d) { return pie(d.genre) })
+          .enter().append("g")
+
+        g.append("path")
+            .attr("d", path)
+            .attr("fill", function(d) { return color(d.data.genre); })
+            .append("title")
+            .text(function(d) { return d.data.genre + ": " + d.data.language})
+
+            // Add a label to the larger arcs, translated to the arc centroid and rotated.
+    g.filter(function(d) { return d.endAngle - d.startAngle > .2; }).append("text")
+        .attr("dy", ".35em")
+        .attr("text-anchor", "middle")
+        .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")rotate(" + angle(d) + ")"; })
+        .text(function(d) { return d.data.genre; });
+
+  console.log(g)
+        // Computes the label angle of an arc, converting from radians to degrees.
+    function angle(d) {
+      var a = (d.startAngle + d.endAngle) * 90 / Math.PI - 90;
+      return a > 90 ? a - 180 : a;
+    }
+
+      //   arc.append("text")
+      //       .attr("transform", function(d) { return "translate(" + label.centroid(d) + ")"; })
+      //       .attr("dy", "0.35em")
+      //       .text(function(d) { return d.data.genre; });
+  })
+
+
 
 
 

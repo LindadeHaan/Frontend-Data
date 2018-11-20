@@ -63,4 +63,17 @@ We had a workshop from Tim about `d3.nest`, he can explain really well and there
 And I learned a lot from the workshop Laurens gave about `d3Time`.
 And there was a quick workshop about `slack` and `github` by Titus.
 
+#### Day 6 | November 19, 2018
+
+Guest speaker: Justus
+
+I tried to make pie chart with D3 once again, but I could not make it work. So I changed my idea to a bar chart, because I understand this better.
+I tried to make a stacked bar chart but I still do not understand it.
+
+#### Day 7 | November 20, 2018
+
+I still tried to make a stacked bar chart and I made a good start and finally understood how I can properly use `d3.nest` and the data I get from `d3.nest`.
+
+The stacked bar chart did not work very well, so I'm going to try and make a grouped bar chart and maybe an anmination to a stacked bar chart.
+
 # Sketches
