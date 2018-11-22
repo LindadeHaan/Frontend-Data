@@ -134,7 +134,7 @@ https://github.com/d3/d3/blob/master/CHANGES.md
 - [ ] Add a legend
 - [ ] Add transition to y axis
 - [ ] Make buttons of the languages for users to click
-- [ ] Style chart
+- [x] Style chart
 - [ ] Add years to chart to make more interaction possible
 - [ ] Get data from earlier years
 
