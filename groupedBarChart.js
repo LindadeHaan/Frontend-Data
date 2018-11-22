@@ -223,9 +223,9 @@ function update(data) {
         return "rgba(122, 1, 119, 0.6)"
       } else if (d.language === "eng") {
         return "rgba(197, 27, 138, 0.6)"
-      } else if (d.language === "ger") {
-        return "rgba(247, 104, 161, 0.6)"
       } else if (d.language === "fre") {
+        return "rgba(247, 104, 161, 0.6)"
+      } else if (d.language === "ger") {
         return "rgba(251, 180, 185, 0.6)"
       } else {
         return "rgba(254, 235, 226, 0.6)"
@@ -253,7 +253,7 @@ function update(data) {
     .call(xAxis)
     .selectAll("text")
     .style("text-anchor", "end")
-    .style("font-size", "20px")
+    .style("font-size", "24px")
     .attr("dx", "-.8em")
     .attr("dy", ".15em")
     .attr("transform", function(d) {
@@ -279,29 +279,11 @@ function update(data) {
       return height - yChart(d.percentage)
     })
 
-    d3.select(".y")
-      .data(data)
-      .attr("y", 0)
-      .attr("height", 0)
-      .transition()
-      .ease(d3.easeLinear)
-      .delay(function(d) {
-        return Math.random() * 1000
-      })
-      .duration(1000)
-      .attr("y", function(d) {
-        return yChart(d.percentage)
-      })
-      .attr("height", function(d) {
-        return height - yChart(d.percentage)
-      })
-
-
 }
 
 // End update
 
-var margin = { top: 20, right: 20, bottom: 95, left: 100 }
+var margin = { top: 50, right: 20, bottom: 95, left: 100 }
 var width = 1000
 var height = 600
 
@@ -332,7 +314,7 @@ chart.append("g")
   .attr("class", "y axis")
   .call(yAxis)
   .style("font-family", "Nexa Light, sans-serif")
-  .style("font-size", "12px")
+  .style("font-size", "24px")
 
 // x axis
 chart.append("g")
@@ -340,7 +322,6 @@ chart.append("g")
   .attr("transform", "translate(0," + height + ")")
   .call(xAxis)
   .selectAll("text")
-  .style("font-size", "50px")
   .style("text-anchor", "end")
   .style("font-family", "Nexa Light, sans-serif")
   .attr("dx", "-.8em")
@@ -352,10 +333,10 @@ chart.append("g")
 // Labels y and x axis
 chart
   .append("text")
-  .attr("transform", "translate(-35," + (height + margin.bottom) / 2 + ") rotate(-90)")
+  .attr("transform", "translate(-60," + (height + margin.bottom) / 2 + ") rotate(-90)")
   .style("fill", "#ffffff")
   .style("font-family", "Nexa Bold, sans-serif")
-  .style("font-size", "18px")
+  .style("font-size", "20px")
   .text("% boeken")
 
 chart
@@ -363,7 +344,7 @@ chart
   .attr("transform", "translate(" + (width / 2) + "," + (height + margin.bottom + 100) + ")")
   .style("fill", "#ffffff")
   .style("font-family", "Nexa Bold, sans-serif")
-  .style("font-size", "18px")
+  .style("font-size", "20px")
   .text("Genres")
 
 d3.select("svg")
