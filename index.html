@@ -6,7 +6,14 @@
    <body>
 
     <style>
-    body {
+
+    .radio{
+	text-align: center;
+}
+.row{
+	text-align: center;
+}
+    /* body {
       font: 10px sans-serif;
     }
 
@@ -23,12 +30,41 @@
 
     .x.axis path {
       display: none;
-    }
+    } */
     </style>
     <!-- <div id="chart">
 
     </div> -->
-    <svg width="960" height="500"></svg>
+    <!-- <svg width="960" height="500"></svg> -->
+
+    <div class='container'>
+	<div class='row'>
+	<h2> Percentage vs. Genres</h2>
+				<!-- <p>total time watched: 1411 minutes</p> -->
+					<div class='radio'>
+						<label class='radio-inline'>
+							<input type="radio" name="language" value="dut" onclick='change(this.value)'> Dutch
+						</label>
+						<label class='radio-inline'>
+							<input type="radio" name="language" value="eng" onclick='change(this.value)'> English
+						</label>
+            <label class='radio-inline'>
+							<input type="radio" name="language" value="ger" onclick='change(this.value)'> German
+						</label>
+            <label class='radio-inline'>
+							<input type="radio" name="language" value="fre" onclick='change(this.value)'> French
+						</label>
+            <label class='radio-inline'>
+							<input type="radio" name="language" value="spa" onclick='change(this.value)'> Spanish
+						</label>
+						<label class='radio-inline'>
+							<input type="radio" name="language" value="all" onclick='change(this.value)' checked > All languages
+						</label>
+					</div>
+			<svg class='chart'>
+			</svg>
+	</div>
+</div>
 
     <script src='https://d3js.org/d3.v5.min.js'></script>
     <!-- <script src='https://d3js.org/topojson.v1.min.js'></script> -->
@@ -37,10 +73,9 @@
     <!-- <script src="/pieScript2.js"></script>
     <script src="/pieScript3.js"></script> -->
     <!-- <script src="stackedBarChart.js"> -->
-    <script src="http://rawgit.com/jamesleesaunders/d3-ez/master/build/d3-ez.js"></script>
-    <script src="stackedBarChart2.js"></script>
-
-    </script>
+    <!-- <script src="stackedBarChart2.js"></script> -->
+    <!-- <script src="barchart.js"></script> -->
+    <script src="groupedBarChart.js"></script>
 
     <!-- <script>
 
