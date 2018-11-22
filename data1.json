@@ -1,346 +1,138 @@
-[{
-  "language": "dut",
-  "values": [{
-    "year": "2015",
-    "keys": [{
-      "genre": "Detective",
-      "value": 172
-    }, {
-      "genre": "Humor",
-      "value": 14
-    }, {
-      "genre": "Sciencefiction",
-      "value": 144
-    }, {
-      "genre": "Stripverhaal",
-      "value": 163
-    }, {
-      "genre": "Avontureroman",
-      "value": 59
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 130
-    }]
-  }, {
-    "year": "2018",
-    "keys": [{
-      "genre": "Detective",
-      "value": 65
-    }, {
-      "genre": "Humor",
-      "value": 8
-    }, {
-      "genre": "Sciencefiction",
-      "value": 65
-    }, {
-      "genre": "Stripverhaal",
-      "value": 68
-    }, {
-      "genre": "Avontureroman",
-      "value": 43
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 110
-    }]
-  }, {
-    "year": "2016",
-    "keys": [{
-      "genre": "Detective",
-      "value": 119
-    }, {
-      "genre": "Humor",
-      "value": 16
-    }, {
-      "genre": "Sciencefiction",
-      "value": 151
-    }, {
-      "genre": "Stripverhaal",
-      "value": 126
-    }, {
-      "genre": "Avontureroman",
-      "value": 85
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 151
-    }]
-  }, {
-    "year": "2017",
-    "keys": [{
-      "genre": "Detective",
-      "value": 119
-    }, {
-      "genre": "Humor",
-      "value": 19
-    }, {
-      "genre": "Sciencefiction",
-      "value": 166
-    }, {
-      "genre": "Stripverhaal",
-      "value": 121
-    }, {
-      "genre": "Avontureroman",
-      "value": 70
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 172
-    }]
-  }]
-}, {
-  "language": "eng",
-  "values": [{
-    "year": "2015",
-    "keys": [{
-      "genre": "Detective",
-      "value": 102
-    }, {
-      "genre": "Humor",
-      "value": 12
-    }, {
-      "genre": "Sciencefiction",
-      "value": 103
-    }, {
-      "genre": "Stripverhaal",
-      "value": 1
-    }, {
-      "genre": "Avontureroman",
-      "value": 27
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 60
-    }]
-  }, {
-    "year": "2016",
-    "keys": [{
-      "genre": "Detective",
-      "value": 82
-    }, {
-      "genre": "Humor",
-      "value": 11
-    }, {
-      "genre": "Sciencefiction",
-      "value": 97
-    }, {
-      "genre": "Stripverhaal",
-      "value": 4
-    }, {
-      "genre": "Avontureroman",
-      "value": 27
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 65
-    }]
-  }, {
-    "year": "2017",
-    "keys": [{
-      "genre": "Detective",
-      "value": 75
-    }, {
-      "genre": "Humor",
-      "value": 12
-    }, {
-      "genre": "Sciencefiction",
-      "value": 123
-    }, {
-      "genre": "Avontureroman",
-      "value": 35
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 58
-    }]
-  }, {
-    "year": "2018",
-    "keys": [{
-      "genre": "Detective",
-      "value": 34
-    }, {
-      "genre": "Humor",
-      "value": 10
-    }, {
-      "genre": "Sciencefiction",
-      "value": 59
-    }, {
-      "genre": "Avontureroman",
-      "value": 9
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 31
-    }]
-  }, {
-    "year": "2017",
-    "keys": [{
-      "genre": "Detective",
-      "value": 1
-    }]
-  }]
-}, {
-  "language": "fre",
-  "values": [{
-    "year": "2016",
-    "keys": [{
-      "genre": "Detective",
-      "value": 5
-    }, {
-      "genre": "Sciencefiction",
-      "value": 2
-    }, {
-      "genre": "Avontureroman",
-      "value": 1
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 3
-    }]
-  }, {
-    "year": "2015",
-    "keys": [{
-      "genre": "Detective",
-      "value": 5
-    }, {
-      "genre": "Humor",
-      "value": 1
-    }, {
-      "genre": "Sciencefiction",
-      "value": 1
-    }, {
-      "genre": "Avontureroman",
-      "value": 2
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 3
-    }]
-  }, {
-    "year": "2017",
-    "keys": [{
-      "genre": "Detective",
-      "value": 3
-    }, {
-      "genre": "Humor",
-      "value": 3
-    }, {
-      "genre": "Avontureroman",
-      "value": 1
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 3
-    }]
-  }]
-}, {
-  "language": "ger",
-  "values": [{
-    "year": "2015",
-    "keys": [{
-      "genre": "Detective",
-      "value": 10
-    }, {
-      "genre": "Humor",
-      "value": 1
-    }, {
-      "genre": "Avontureroman",
-      "value": 1
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 1
-    }]
-  }, {
-    "year": "2016",
-    "keys": [{
-      "genre": "Detective",
-      "value": 10
-    }, {
-      "genre": "Humor",
-      "value": 2
-    }, {
-      "genre": "Avontureroman",
-      "value": 2
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 7
-    }]
-  }, {
-    "year": "2017",
-    "keys": [{
-      "genre": "Detective",
-      "value": 4
-    }, {
-      "genre": "Humor",
-      "value": 3
-    }, {
-      "genre": "Sciencefiction",
-      "value": 1
-    }, {
-      "genre": "Avontureroman",
-      "value": 2
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 12
-    }]
-  }, {
-    "year": "2018",
-    "keys": [{
-      "genre": "Detective",
-      "value": 1
-    }]
-  }, {
-    "year": "2018",
-    "keys": [{
-      "genre": "Detective",
-      "value": 1
-    }]
-  }]
-}, {
-  "language": "spa",
-  "values": [{
-    "year": "2016",
-    "keys": [{
-      "genre": "Detective",
-      "value": 3
-    }, {
-      "genre": "Humor",
-      "value": 1
-    }, {
-      "genre": "Sciencefiction",
-      "value": 2
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 3
-    }]
-  }, {
-    "year": "2017",
-    "keys": [{
-      "genre": "Detective",
-      "value": 3
-    }, {
-      "genre": "Sciencefiction",
-      "value": 1
-    }, {
-      "genre": "Avontureroman",
-      "value": 1
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 5
-    }]
-  }, {
-    "year": "2018",
-    "keys": [{
-      "genre": "Detective",
-      "value": 1
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 1
-    }]
-  }, {
-    "year": "2015",
-    "keys": [{
-      "genre": "Detective",
-      "value": 6
-    }, {
-      "genre": "Sciencefiction",
-      "value": 5
-    }, {
-      "genre": "Avontureroman",
-      "value": 3
-    }, {
-      "genre": "Romantisch verhaal",
-      "value": 5
-    }]
-  }]
-}]
+[
+{
+"genre": "Detective",
+"language": "dut",
+"percentage": 57.9
+},
+{
+"genre": "Detective",
+"language": "eng",
+"percentage": 35.8
+},
+{
+"genre": "Detective",
+"language": "fre",
+"percentage": 1.6
+},
+{
+"genre": "Detective",
+"language": "ger",
+"percentage": 3.2
+},
+{
+"genre": "Detective",
+"language": "spa",
+"percentage": 1.6
+},
+{
+"genre": "Humor",
+"language": "dut",
+"percentage": 50.4
+},
+{
+"genre": "Humor",
+"language": "eng",
+"percentage": 39.9
+},
+{
+"genre": "Humor",
+"language": "fre",
+"percentage": 3.5
+},
+{
+"genre": "Humor",
+"language": "ger",
+"percentage": 5.3
+},
+{
+"genre": "Humor",
+"language": "spa",
+"percentage": 0.9
+},
+{
+"genre": "Sciencefiction",
+"language": "dut",
+"percentage": 57.2
+},
+{
+"genre": "Sciencefiction",
+"language": "eng",
+"percentage": 41.5
+},
+{
+"genre": "Sciencefiction",
+"language": "fre",
+"percentage": 0.3
+},
+{
+"genre": "Sciencefiction",
+"language": "ger",
+"percentage": 0.1
+},
+{
+"genre": "Sciencefiction",
+"language": "spa",
+"percentage": 0.9
+},
+{
+"genre": "Stripverhaal",
+"language": "dut",
+"percentage": 99.0
+},
+{
+"genre": "Stripverhaal",
+"language": "eng",
+"percentage": 1.0
+},
+{
+"genre": "Avontureroman",
+"language": "dut",
+"percentage": 69.8
+},
+{
+"genre": "Avontureroman",
+"language": "eng",
+"percentage": 26.6
+},
+{
+"genre": "Avontureroman",
+"language": "fre",
+"percentage": 1.1
+},
+{
+"genre": "Avontureroman",
+"language": "ger",
+"percentage": 1.4
+},
+{
+"genre": "Avontureroman",
+"language": "spa",
+"percentage": 1.1
+},
+{
+"genre": "Romantisch Verhaal",
+"language": "dut",
+"percentage": 68.7
+},
+{
+"genre": "Romantisch Verhaal",
+"language": "eng",
+"percentage": 26.1
+},
+{
+"genre": "Romantisch Verhaal",
+"language": "fre",
+"percentage": 1.1
+},
+{
+"genre": "Romantisch Verhaal",
+"language": "ger",
+"percentage": 2.4
+},
+{
+"genre": "Romantisch Verhaal",
+"language": "spa",
+"percentage": 1.7
+}
+
+]
