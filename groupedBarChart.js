@@ -198,17 +198,17 @@ for(var i = 0; i < languageCount.length; i++){
 //functions for toggling between data
 function change(value){
 
-	if(value == "dut"){
+	if(value === 'dut'){
 		update(dutData);
-	}else if(value == "eng"){
+	}else if(value === 'eng'){
 		update(engData);
-	} else if(value == "ger"){
+	} else if(value === 'ger'){
 		update(gerData);
-	} else if(value == "fre"){
+	} else if(value === 'fre'){
 		update(freData);
-	} else if(value == "spa"){
+	} else if(value === 'spa'){
 		update(spaData);
-	} else{
+	} else if (value === 'all'){
 		update(languageCount);
 	}
 }
@@ -230,7 +230,7 @@ function update(data){
   var bars = chart.selectAll(".bar")
 					.remove()
 					.exit()
-					.data(languageCount)
+					.data(data)
 	//now actually give each rectangle the corresponding data
 	  .enter()
 		.append("rect")
@@ -283,7 +283,7 @@ var chart = d3.select(".chart")
 
 var xChart = d3.scaleBand()
 				.range([0, width])
-        .padding(0.1)
+        .padding(1)
 
 var x1Chart = d3.scaleBand()
 
