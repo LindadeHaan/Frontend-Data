@@ -10,7 +10,7 @@
 * [Credits & Help](#credits--help-%EF%B8%8F)
 * [Sources](#sources-)
 * [To Do](#to-do-)
-* [Sketches](#sketches-)
+* [Sketches](#sketches-%EF%B8%8F)
 
 ## Assignment 📚
 Make a data visualization with interaction.
