@@ -1,0 +1,81 @@
+
+    body {
+      background: #24272b;
+      font-family: "Nexa Light", sans-serif;
+      color: #ffffff;
+    }
+    .chart {
+      padding: 2rem;
+    }
+    .axis,
+    .xAxis {
+      color: #ffffff;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      margin-bottom: 60px;
+    }
+    .radio-inline {
+      font-size: 24px;
+    }
+    .radio{
+	    text-align: center;
+    }
+    .row{
+	     text-align: center;
+     }
+     .toolTip {
+       position: absolute;
+       display: none;
+       min-width: 60px;
+       height: auto;
+       background: none repeat scroll 0 0 rgba(179, 205, 227, 0.6);
+       border: 1px solid rgba(179, 205, 227, 0.6);
+       border-radius: 5px;
+       padding: 25px;
+       text-align: center;
+     }
+     button:first-of-type {
+       background: rgba(122, 1, 119, 0.6);
+     }
+     button:nth-of-type(2) {
+       background: rgba(197, 27, 138, 0.6);
+     }
+     button:nth-of-type(3) {
+       background: rgba(247, 104, 161, 0.6);
+     }
+     button:nth-of-type(4) {
+       background: rgba(251, 180, 185, 0.6);
+     }
+     button:nth-of-type(5) {
+       background: rgba(254, 235, 226, 0.6);
+     }
+     button {
+       padding: 1rem;
+       border: 1px solid #ffffff;
+       margin-right: 15px;
+       border-radius: 5px;
+       background: #24272b;
+       color: #ffffff;
+       font-family: "Nexa Light", sans-serif;
+     }
+     button:hover {
+       background: #ffffff;
+       color: #000000;
+       transition: 0.8s;
+     }
+     button:focus {
+       background: #ffffff;
+       color: #000000;
+       transition: 0.8s;
+     }
+     button.active {
+       background: #ffffff;
+       color: #000000;
+       transition: 0.8s;
+     }
+     input[type="radio"] {
+       display: none;
+     }
