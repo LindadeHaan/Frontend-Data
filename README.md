@@ -1,15 +1,16 @@
 # D3 ⚙️
 
-* [Final Product](final-product)
-* [First Idea](first-idea)
-* [Second Idea](second-idea)
-* [Data](data)
-* [Interaction](interaction)
-* [What did I learn?]()
-* [Credits & Help]()
-* [Sources](sources)
-* [To Do](to-do)
-* [Sketches](sketches)
+* [Assignment](#assignment-)
+* [Final Product](#final-product-)
+* [First Idea](#first-idea-)
+* [Second Idea](#second-idea-)
+* [Data](#data-)
+* [Interaction](#interaction-%EF%B8%8F)
+* [What did I learn?](#what-did-i-learn-)
+* [Credits & Help](#credits--help-%EF%B8%8F)
+* [Sources](#sources-)
+* [To Do](#to-do-)
+* [Sketches](#sketches-)
 
 ## Assignment 📚
 Make a data visualization with interaction.
@@ -17,6 +18,7 @@ Make a data visualization with interaction.
 We had to make another data visualization with data we get from the OBA API. This time we had to add interaction to the visualization.
 
 ## Final Product 📊
+https://lindadehaan.github.io/frontend-data/index.html
 
 <img width="600" src="/images/end-product.png">
 
