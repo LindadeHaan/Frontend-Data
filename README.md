@@ -18,7 +18,7 @@ Make a data visualization with interaction.
 We had to make another data visualization with data we get from the OBA API. This time we had to add interaction to the visualization.
 
 ## Final Product 📊
-https://lindadehaan.github.io/frontend-data/index.html
+https://lindadehaan.github.io/frontend-data/
 
 <img width="600" src="/images/end-product.png">
 
