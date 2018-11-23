@@ -1,6 +1,6 @@
 # D3 ⚙️
 
-* [End Product](end-product)
+* [Final Product](final-product)
 * [First Idea](first-idea)
 * [Second Idea](second-idea)
 * [Data](data)
@@ -16,9 +16,15 @@ Make a data visualization with interaction.
 
 We had to make another data visualization with data we get from the OBA API. This time we had to add interaction to the visualization.
 
-## End Product 📊
+## Final Product 📊
 
-<img width="600" src="/images/">
+<img width="600" src="/images/end-product.png">
+
+My final product is not what I wanted it to be, but I'm still proud of myself that I made this and that I understand the code.
+
+The chart shows the percentage per language per genre. All the languages in one genre together are 100%.
+You can chose to see just one language or all the languages.
+The buttons are the same color as the corresponding bar. This is how you can see which bar is which language. Although the tooltip also shows what the bar represents.
 
 ## First Idea 📶
 <img width="600" src="/images/wireframe-datavisualisatie.jpg">
@@ -51,7 +57,7 @@ I still tried to make a stacked bar chart with the reduced data. I thought I was
 
 After this did not work out, I searched for an example for a grouped bar chart. I thought maybe that would be a bit easier to understand. And all the examples I found were indeed easier to understand, so I tried to make a grouped bar chart. In the beginning it would not really work, but after I asked help a couple of time from Wouter, Maikel, Chelsea and Jessie I eventually got a grouped bar chart (on the last day).
 
-<img width="600" src="/images/">
+<img width="600" src="/images/end-product.png">
 
 It was certainly not the idea I had in mind, but I'm still happy with the result. And I'm happy because I learned a lot about `D3` and I truly have the feeling I understand it pretty well.
 
@@ -72,6 +78,21 @@ The data I got from the API:
 * The genres Detective, Humor, Sciencefiction, Stripverhaal, Avontureroman and Romantisch verhaal;
 * Publication place, because I had a little idea to show this when you would hover on a genre with a few books.
 
+### Data Structure
+```js
+[
+{
+"genre": "Detective",
+"language": "dut",
+"percentage": 57.9
+},
+{
+"genre": "Detective",
+"language": "eng",
+"percentage": 35.8
+},
+```
+
 ## Interaction ⁉️
 I got very few interactions, but I had such a struggle with getting a chart. I am happy with what I've got.
 
@@ -86,7 +107,9 @@ I really learned a lot about `D3`. Although did not use `d3.nest()` in my final 
 
 I learned that `D3` is a lot of math, that is what makes it logical. And I understand math pretty well, that is why I understand `D3` more than I understand `JavaScript`.
 
-You can make so many different visualizations with the same data with `D3`. I just could not make it work, because I did not understand how to use my data at first. But eventually I understood it, luckily!.
+You can make so many different visualizations with the same data with `D3`. I just could not make it work, because I did not understand how to use my data at first. But eventually I understood it, luckily!
+
+There are so many people who can and will help you. Even if it is the most stupid thing that you just did not see. Everyone has a struggle with code at some point. I learned that I should not be afraid to ask for help.
 
 ## Credits & Help ❤️
 * [Jessie Mason](https://github.com/jessiemasonx)
@@ -106,14 +129,11 @@ Chelsea explained a lot of code to me. She is really good at explaining code I j
 Guus helped me with the transition of the bars. He gave one tip and after that it immediately worked.
 
 ## Sources 🖥
-* Grouped bar chart:  
-https://bl.ocks.org/syncopika/f1c9036b0deb058454f825238a95b6be  
-* Tooltip:  
-https://bl.ocks.org/alandunning/274bf248fd0f362d64674920e85c1eb7  
-* Map with `D3`:  
-http://blockbuilder.org/bricedev/b485239a37ca57722603  
-* Removing countries from map:  
-https://github.com/d3/d3/blob/master/CHANGES.md
+* [Grouped bar chart](https://bl.ocks.org/syncopika/f1c9036b0deb058454f825238a95b6be)
+* [Tooltip](https://bl.ocks.org/alandunning/274bf248fd0f362d64674920e85c1eb7)
+* [Map with `D3`](http://blockbuilder.org/bricedev/b485239a37ca57722603)
+* [Removing countries from map](https://github.com/d3/d3/blob/master/CHANGES.md)
+* [Learn JS data](http://learnjsdata.com/group_data.html)
 
 ## To Do 🤓
 - [x] Get an idea to visualize data from the OBA
@@ -131,12 +151,14 @@ https://github.com/d3/d3/blob/master/CHANGES.md
   - [x] Switch languages
 - [x] Add transitions to the bars when users switch to other data
 - [ ] Put data in seperate `json` file
-- [ ] Add a legend
+- [x] Add a legend
 - [ ] Add transition to y axis
-- [ ] Make buttons of the languages for users to click
+- [x] Make buttons of the languages for users to click
 - [x] Style chart
 - [ ] Add years to chart to make more interaction possible
 - [ ] Get data from earlier years
+
+I did not have time for everything, and I can not do everything by myself. But this is what I wanted to achieve.
 
 ## Sketches ✏️
 <img width="600" src="/images/schetsstacked.jpg">
@@ -144,74 +166,3 @@ https://github.com/d3/d3/blob/master/CHANGES.md
 <img width="600" src="/images/map.jpg">
 
 <img width="600" src="/images/sunburst.jpg">
-
-
-
-<!-- # Process
-### Week 1
-#### Day 1 | November 12, 2018
-
-We had an introduction of the new course: Frontend Data. We have to make a visualization of data from the OBA API and make it interactive.
-After the introduction there was a guest speaker (Emma). She talked about datavisualizations and to show her work.
-
-I searched for different data than the previous assignment to visualize.
-I looked at examples of charts with interaction that are made with D3.
-
-#### Day 2 | November 13, 2018
-
-I thought of what data I want to visualize.
-
-I want to visualize books with different languages, different genres, year of publication, publishers and the place where the books are published.
-
-I'm thinking about using a bar chart or a sunburst, but I am not sure yet.
-
-We had a stand-up organised by May. Everyone told what they think they want to visualize and what kind of chart they want to use. The other ones gave some tips or shared their thoughts about it.
-
-I put my data in a `json` file.
-
-I made sketches of the ideas I've got to visualize my data and how to make it interactive.
-
-#### Day 3 | November 14, 2018
-
-I told my idea to Laurens and got some feedback. The feedback helped a lot.
-
-The guest speaker, Leon de Korte, had a very interesting talk about what they do at The Correspondent.
-
-I made a map with `D3` with a tutorial and removed the countries I don't need.
-
-I searched for a lot of turtorials about piecharts and maps.
-
-#### Day 4 | November 15, 2018
-
-* feedback die ik heb gehad (verder terug in de tijd)
-
-Today I made a wireframe of my idea for the datavisualization.
-I want to get the data from five languages and 6 genres and categorize them per language area in Europe.
-I chose the five languages you can get at school: Dutch, English, German, French and Spanish. I only focus on Europe.
-
-I already made a map with `D3`, but I need a pie chart first. Because I can make that interactive and than I can look at how I can get the pie charts on a map.
-So I also tried to make pie charts, but I could not make it work.
-
-At the end of the day we had to present our idea to the class.
-
-#### Day 5 | November 16, 2018
-
-Today I worked on getting a pie chart with my data. I could not make it work yet, but I don't have errors. So I don't know what I did wrong.
-I want to figure this out during the weekend.
-
-We had a workshop from Tim about `d3.nest`, he can explain really well and there were some things that were super interesting to learn.
-And I learned a lot from the workshop Laurens gave about `d3Time`.
-And there was a quick workshop about `slack` and `github` by Titus.
-
-#### Day 6 | November 19, 2018
-
-Guest speaker: Justus
-
-I tried to make pie chart with D3 once again, but I could not make it work. So I changed my idea to a bar chart, because I understand this better.
-I tried to make a stacked bar chart but I still do not understand it.
-
-#### Day 7 | November 20, 2018
-
-I still tried to make a stacked bar chart and I made a good start and finally understood how I can properly use `d3.nest` and the data I get from `d3.nest`.
-
-The stacked bar chart did not work very well, so I'm going to try and make a grouped bar chart and maybe an anmination to a stacked bar chart. -->
